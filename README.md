@@ -13,11 +13,11 @@
 - Use of `.env` file.
 - SQLAlchemy integration for database abstraction.
 
-## Installation (automatic if you are using gitpod)
+## Installation (automatic if you are using gitpod or docker)
 
 > Important: The boiplerplate is made for python 3.7 but you can easily change the `python_version` on the Pipfile.
 
-The following steps are automatically runned withing gitpod, if you are doing a local installation you have to do them manually:
+The following steps are automatically runned within gitpod and docker. If you are doing a local installation you have to do them manually:
 
 ```sh
 pipenv install;
@@ -63,8 +63,8 @@ $ pipenv run start (to start the flask webserver)
 3. Clone the repo and create a `.env` file; complete key-value pairs as proposed on `.env.example` file
 4. Run `docker-compose up` and give it a few minutes
 5. Have some coffee
-6. Your mysql service should be up on port 33060 (from host, a.k.a. your OS)
-7. Your api service should be up on port 3000 (from host, also your OS)
+6. After images and containers are built, you should see your **API** (flask web server) running on port 3000 (from host, a.k.a. your OS)
+7. Your **database** service should be up on port 33060(from host, also your OS)
 
 ## Deploy to Heroku
 
