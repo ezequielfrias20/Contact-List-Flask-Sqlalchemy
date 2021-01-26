@@ -3,6 +3,11 @@
 Here we are tracking the previous and upcoming changes (roadmap), pull request this file or open an issue if you have any suggestions for the next version of the boilerplate.
 
 ### Jan 26, 2021
+- Added Dockerfile, docker-compose.yml & shell script to run whitin container.
+- Updated README with launch with docker instructions.
+- Added README.es for spanish instructions support. 
+
+### Jan 26, 2021
 - Changed the main branch from `master` to `main` and updated all the docs and files to avoid bugs.
 
 ### Sep 14, 2020

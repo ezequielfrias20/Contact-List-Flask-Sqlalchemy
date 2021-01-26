@@ -79,6 +79,6 @@ $ heroku login -i
 // Crea una aplicación (si no la tienes ya)
 $ heroku create <nombre_de_tu_app>
 // Empuja tus cambios a heroku (haz commit de tus cambios)
-$ git push heroku master
+$ git push heroku main
 ```
 ⚠ Para una explicación detallada sobre archivos .env o la base de datos MySQL [lea la guía completa](https://github.com/4GeeksAcademy/flask-rest-hello/blob/master/docs/DEPLOY_YOUR_APP.md).
