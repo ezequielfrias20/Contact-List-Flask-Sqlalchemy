@@ -62,7 +62,7 @@ def add_new_contact():
     db.session.commit()
     return "ok",200
 
-@app.route('/contacts/<int:position>', methods=['PATCH'])
+@app.route('/contacts/<int:id>', methods=['PATCH'])
 def upgrade_contact(id):
     body = request.get_json()
     contact_to_upgrade = Contact.query.get(id)
@@ -112,7 +112,7 @@ def update_allcontact(position):
     db.session.commit()
     return "ok", 200
 
-@app.route('/contacts/<int:position>', methods=['GET'])
+@app.route('/contacts/<int:id>', methods=['GET'])
 def handle_one_contact(id):
     contact = Contact.query.get(id)
     if contact is None:
@@ -120,7 +120,7 @@ def handle_one_contact(id):
     else:
         return jsonify(contact.serialize()), 202
 
-@app.route('/contacts/<int:position>', methods=['DELETE'])
+@app.route('/contacts/<int:id>', methods=['DELETE'])
 def delete_contact(id): 
     db.session.delete(Contact.query.get_or_404(id) )
     db.session.commit() 
